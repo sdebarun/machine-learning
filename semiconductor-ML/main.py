@@ -65,7 +65,7 @@ plt.show()
 
 
 
-# For growth parameters (like Fig S9)
+# For growth parameters
 growth_params = ["TMo", "TS", "Flow", "s"]
 growth_corr = data[growth_params].corr()
 
@@ -76,11 +76,12 @@ sns.heatmap(
 plt.title("Correlation Matrix of CVD Growth Parameters")
 plt.show()
 
-# For morphology parameters (like Fig S10)
+# For morphology parameters
 morphology_params = [
      "Coverage",
     "Average size",
     "Edge length",
+    "Nucleation density",
     "Nucleation rate",
 ]
 morph_corr = data[morphology_params].corr()
